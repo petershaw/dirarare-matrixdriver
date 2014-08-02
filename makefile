@@ -1,13 +1,13 @@
 #######################################################################
 ######                                                           ######
 #######################################################################
-###### Project:   PSEN-ArtNet-Blink
+###### Project:   dirarare-matrixdriver
 ###### Developer: Peter Shaw
 ###### Date: Jan/2014
 ###### URL: 
 #######################################################################
 
-PROJECTNAME = blink
+PROJECTNAME = dirarare-matrixdriver
 
 include environment/build.mk
 include environment/applications.mk

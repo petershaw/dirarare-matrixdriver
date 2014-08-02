@@ -14,4 +14,3 @@ BOOTLOADER_PORT = /dev/tty.SLAB_USBtoUART
 
 # baud to use a bootloader
 BOOTLOADER_BAUD = 9600
-#9600
