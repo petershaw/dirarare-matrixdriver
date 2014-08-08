@@ -18011,8 +18011,8 @@ Source: DCJ0202.pdf</description>
 <part name="C1" library="resistor" deviceset="C-EU" device="C1206" value="22p"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C1206" value="22p"/>
 <part name="IC2" library="40xx" deviceset="4017" device="D"/>
-<part name="IC3" library="uln-udn" deviceset="ULN2803A" device="SMD"/>
-<part name="JP1" library="pinhead-fixdrills" deviceset="PINHD-2X8" device="_2.54-90°"/>
+<part name="IC3" library="uln-udn" deviceset="ULN2803A" device="SMD" value="ULN2803"/>
+<part name="JP1" library="pinhead-fixdrills" deviceset="PINHD-2X8" device="_2.54-90°" value="LIGHTS"/>
 <part name="Q2" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
 <part name="Q3" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
 <part name="Q4" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
@@ -18021,18 +18021,18 @@ Source: DCJ0202.pdf</description>
 <part name="Q7" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
 <part name="Q8" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
 <part name="Q9" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device="" value="IN"/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device="" value="OUT"/>
 <part name="TP1" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="TP2" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="TP3" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="TP4" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="TP5" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="TP6" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
-<part name="PORTSELECT" library="pinhead" deviceset="PINHD-2X3" device=""/>
+<part name="JP4" library="pinhead" deviceset="PINHD-2X3" device="" value="PORTSELECT"/>
 <part name="IC4" library="linear" deviceset="78*" device="T" technology="05"/>
-<part name="C3" library="rcl" deviceset="CPOL-US" device="E5-8.5"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C1206"/>
+<part name="C3" library="rcl" deviceset="CPOL-US" device="E5-8.5" value="100µ"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="10µ"/>
 <part name="J1" library="con-jack" deviceset="DCJ0202" device=""/>
 </parts>
 <sheets>
@@ -18057,7 +18057,7 @@ Source: DCJ0202.pdf</description>
 <instance part="R14" gate="G$1" x="129.54" y="109.22"/>
 <instance part="R15" gate="G$1" x="129.54" y="93.98"/>
 <instance part="R16" gate="G$1" x="129.54" y="78.74"/>
-<instance part="Q1" gate="P" x="30.734" y="68.58" rot="R270"/>
+<instance part="Q1" gate="P" x="30.48" y="68.58" rot="R270"/>
 <instance part="IC1" gate="G$1" x="111.76" y="17.78"/>
 <instance part="R17" gate="G$1" x="96.52" y="5.08" rot="R270"/>
 <instance part="C1" gate="G$1" x="17.78" y="71.12" rot="R90"/>
@@ -18081,11 +18081,12 @@ Source: DCJ0202.pdf</description>
 <instance part="TP4" gate="G$1" x="60.96" y="111.76" rot="R270"/>
 <instance part="TP5" gate="G$1" x="58.42" y="106.68" rot="R90"/>
 <instance part="TP6" gate="G$1" x="60.96" y="101.6" rot="R270"/>
-<instance part="PORTSELECT" gate="A" x="48.26" y="15.24"/>
+<instance part="JP4" gate="A" x="48.26" y="15.24"/>
 <instance part="IC4" gate="A1" x="5.08" y="152.4" rot="R90"/>
 <instance part="C3" gate="G$1" x="7.62" y="129.54" rot="R90"/>
 <instance part="C4" gate="G$1" x="7.62" y="170.18" rot="R90"/>
 <instance part="J1" gate="G$1" x="7.62" y="104.14" rot="R90"/>
+<instance part="IC2" gate="P" x="109.22" y="73.66" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -18267,6 +18268,11 @@ Source: DCJ0202.pdf</description>
 <junction x="5.08" y="170.18"/>
 <label x="5.08" y="180.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="P" pin="VDD"/>
+<wire x1="101.6" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
+<label x="99.06" y="73.66" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -18323,15 +18329,15 @@ Source: DCJ0202.pdf</description>
 <label x="66.04" y="101.6" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PORTSELECT" gate="A" pin="1"/>
+<pinref part="JP4" gate="A" pin="1"/>
 <wire x1="45.72" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="17.78" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="PORTSELECT" gate="A" pin="3"/>
+<pinref part="JP4" gate="A" pin="3"/>
 <wire x1="35.56" y1="15.24" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="12.7" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
 <junction x="35.56" y="15.24"/>
-<pinref part="PORTSELECT" gate="A" pin="5"/>
+<pinref part="JP4" gate="A" pin="5"/>
 <wire x1="45.72" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <junction x="35.56" y="12.7"/>
 <label x="35.56" y="7.62" size="1.778" layer="95" rot="R270" xref="yes"/>
@@ -18339,9 +18345,9 @@ Source: DCJ0202.pdf</description>
 <segment>
 <pinref part="IC4" gate="A1" pin="GND"/>
 <wire x1="12.7" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
-<label x="17.78" y="152.4" size="1.778" layer="95" xref="yes"/>
+<label x="20.32" y="152.4" size="1.778" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="15.24" y1="152.4" x2="17.78" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="111.76" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="119.38" x2="15.24" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="119.38" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
@@ -18354,31 +18360,10 @@ Source: DCJ0202.pdf</description>
 <wire x1="12.7" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
 <junction x="15.24" y="129.54"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA1(XTAL2)"/>
-<wire x1="38.1" y1="71.12" x2="30.734" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="P" pin="1"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA0(XTAL1)"/>
-<wire x1="38.1" y1="66.04" x2="30.734" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="P" pin="2"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="P" pin="VSS"/>
+<wire x1="116.84" y1="73.66" x2="119.38" y2="73.66" width="0.1524" layer="91"/>
+<label x="119.38" y="73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -18749,7 +18734,7 @@ Source: DCJ0202.pdf</description>
 </net>
 <net name="N$60" class="0">
 <segment>
-<pinref part="PORTSELECT" gate="A" pin="2"/>
+<pinref part="JP4" gate="A" pin="2"/>
 <wire x1="53.34" y1="17.78" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="17.78" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(INT0)PD2"/>
@@ -18758,7 +18743,7 @@ Source: DCJ0202.pdf</description>
 </net>
 <net name="N$61" class="0">
 <segment>
-<pinref part="PORTSELECT" gate="A" pin="4"/>
+<pinref part="JP4" gate="A" pin="4"/>
 <wire x1="53.34" y1="15.24" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="15.24" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(T1)PD5"/>
@@ -18767,7 +18752,7 @@ Source: DCJ0202.pdf</description>
 </net>
 <net name="N$62" class="0">
 <segment>
-<pinref part="PORTSELECT" gate="A" pin="6"/>
+<pinref part="JP4" gate="A" pin="6"/>
 <wire x1="53.34" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="12.7" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(ICP)PD6"/>
@@ -18784,9 +18769,46 @@ Source: DCJ0202.pdf</description>
 <pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="71.12" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="71.12" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="73.66" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PA1(XTAL2)"/>
+<wire x1="35.56" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="71.12" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
+<junction x="30.48" y="73.66"/>
+<pinref part="Q1" gate="P" pin="1"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA0(XTAL1)"/>
+<wire x1="38.1" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="66.04" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="63.5" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="P" pin="2"/>
+<wire x1="30.48" y1="63.5" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<junction x="30.48" y="63.5"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,116.84,73.66,IC2P,VSS,GND,,,"/>
+<approved hash="104,1,101.6,73.66,IC2P,VDD,VCC,,,"/>
+<approved hash="202,1,63.5,121.92,TP2,TP,,,,"/>
+<approved hash="209,1,55.88,106.68,N$59,,,,,"/>
+<approved hash="209,1,38.1,93.98,N$59,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
