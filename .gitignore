@@ -1,5 +1,6 @@
 /target/
-
 /off/
-
 /build/
+hardware/*.b#*
+hardware/*.s#*
+
