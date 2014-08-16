@@ -1,44 +1,39 @@
 Partlist
 
-Exported from matrixdriver.brd at 10/08/14 15:53
+Exported from matrixdriver.sch at 16/08/14 03:32
 
-EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+EAGLE Version 7.0.0 Copyright (c) 1988-2014 CadSoft
 
 Assembly variant: 
 
-Part         Value          Package             Library           Position (mil)        Orientation
+Part         Value          Device            Package             Library           Sheet
 
-C1           22p            C1206               resistor          (275 200)             R90
-C2           22p            C1206               resistor          (875 200)             R90
-C3           100µ           UD-6,3X5,8_NICHICON rcl               (1700 475)            R180
-C4           10µ            C1206               rcl               (1775 700)            R0
-CTS742C083_1 1k             CTS742C083          resistor-net      (325 1050)            R0
-CTS742C083_2 1k             CTS742C083          resistor-net      (475 1000)            R0
-CTS742C083_3 10             CTS742C083          resistor-net      (375 1500)            R0
-CTS742C083_4 10             CTS742C083          resistor-net      (1075 1500)           R0
-IC1          75176AD        D_R-PDSO-G8         751xx             (1350 500)            R0
-IC2          4017D          SO16                40xx              (1025 850)            R180
-IC3          ULN2803        SO18W               uln-udn           (1425 1450)           R0
-IC4          7805DT         TO252               linear            (1825 1450)           R0
-J1           DCJ0202        DCJ0202             con-jack          (1725 950)            R90
-JP1          LIGHTS         2X08                pinhead-fixdrills (675 1750)            R0
-JP2          IN             1X03                pinhead           (1525 200)            R180
-JP3          OUT            1X03                pinhead           (1175 200)            R180
-JP4          P.SELECT       2X03                pinhead           (975 425)             R0
-Q2           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (325 1275)            R0
-Q3           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (475 1275)            R0
-Q4           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (625 1275)            R0
-Q5           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (625 1525)            R0
-Q6           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (825 1525)            R0
-Q7           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (825 1275)            R0
-Q8           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (975 1275)            R0
-Q9           MMBT4403LT1SMD SOT23-BEC           transistor-pnp    (1125 1275)           R0
-Q10          20MHZ          HC49/S              adafruit          (575 250)             R180
-R17          1k             R1206               resistor          (1175 550)            R90
-TP1          TPSQTP20R      TP20R               testpad           (125 1600)            R270
-TP2          TPSQTP19SQ     TP19SQ              testpad           (125 1450)            R270
-TP3          TPSQTP20SQ     TP20SQ              testpad           (125 1300)            R270
-TP4          TPSQTP20SQ     TP20SQ              testpad           (125 1150)            R0
-TP5          TPSQTP20SQ     TP20SQ              testpad           (125.70079 999)       R270
-TP6          TPSQTP20SQ     TP20SQ              testpad           (125 850)             R270
-U$1          TINY2313       SO20L$              avr-6             (450 625)             R0
+C1           22p            C-EUC1206         C1206               resistor          1
+C2           22p            C-EUC1206         C1206               resistor          1
+C3           100µ           CPOL-USUD-6,3X5,8 UD-6,3X5,8_NICHICON rcl               1
+C4           10µ            C-EUC1206         C1206               rcl               1
+C5           100n           C-EUC1206         C1206               resistor          1
+CTS742C083_1 1k             CTS742C083        CTS742C083          resistor-net      1
+CTS742C083_2 1k             CTS742C083        CTS742C083          resistor-net      1
+CTS742C083_3 10             CTS742C083        CTS742C083          resistor-net      1
+CTS742C083_4 10             CTS742C083        CTS742C083          resistor-net      1
+IC1          75176AD        75176AD           D_R-PDSO-G8         751xx             1
+IC2          4017D          4017D             SO16                40xx              1
+IC3          ULN2803        ULN2803ASMD       SO18W               uln-udn           1
+IC4          7805DT         7805DT            TO252               linear            1
+J1           DCJ0202        DCJ0202           DCJ0202             con-jack          1
+JP1          LIGHTS         PINHD-2X8_2.54    2X08                pinhead-fixdrills 1
+JP2          IN             PINHD-1X3         1X03                pinhead           1
+JP3          OUT            PINHD-1X3         1X03                pinhead           1
+JP4          P.SELECT       PINHD-2X3         2X03                pinhead           1
+Q2           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q3           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q4           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q5           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q6           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q7           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q8           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q9           MMBT4403LT1SMD MMBT4403LT1SMD    SOT23-BEC           transistor-pnp    1
+Q10          20MHZ          CRYSTALHC49S      HC49/S              adafruit          1
+R17          1k             R-EU_R1206        R1206               resistor          1
+U$1          2313           TINY2313-*S*      SO20L$              avr-6             1
