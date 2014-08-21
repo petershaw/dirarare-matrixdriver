@@ -10,7 +10,7 @@ Part         Value          Device            Package             Library       
 
 C1           22p            C-EUC1206         C1206               resistor          1
 C2           22p            C-EUC1206         C1206               resistor          1
-C3           100µ           CPOL-USUD-6,3X5,8 UD-6,3X5,8_NICHICON rcl               1
+C3           100µ           10µ-6,3X5,8 UD-6,3X5,8_NICHICON rcl               1
 C4           10µ            C-EUC1206         C1206               rcl               1
 C5           100n           C-EUC1206         C1206               resistor          1
 CTS742C083_1 1k             CTS742C083        CTS742C083          resistor-net      1
