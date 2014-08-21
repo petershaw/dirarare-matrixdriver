@@ -3,4 +3,4 @@
 /build/
 hardware/*.b#*
 hardware/*.s#*
-
+local

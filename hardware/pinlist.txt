@@ -1,0 +1,215 @@
+Pinlist
+
+Exported from matrixdriver.brd at 21/08/14 21:55
+
+EAGLE Version 7.0.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Net
+
++        TP       N$7
+
+C1       1        GND
+         2        N$11
+
+C2       1        GND
+         2        N$12
+
+C4       1        VCC
+         2        GND
+
+C5       1        GND
+         2        VCC
+
+C6       1        N$65
+         2        GND
+
+CTS742C083_1 1        N$8
+         2        N$7
+         3        N$6
+         4        N$5
+         5        N$39
+         6        N$38
+         7        N$32
+         8        N$37
+
+CTS742C083_2 1        N$4
+         2        N$3
+         3        N$2
+         4        N$1
+         5        N$41
+         6        N$40
+         7        N$43
+         8        N$42
+
+CTS742C083_3 1        N$56
+         2        N$55
+         3        N$54
+         4        N$53
+         5        N$36
+         6        N$35
+         7        N$34
+         8        N$33
+
+CTS742C083_4 1        N$52
+         2        N$51
+         3        N$50
+         4        N$49
+         5        N$31
+         6        N$30
+         7        N$29
+         8        N$13
+
+IC1      1        N$9
+         2        N$10
+         3        VCC
+         4        N$10
+         5        GND
+         6        N$57
+         7        N$58
+         8        VCC
+
+IC2      1        N$22
+         10       N$21
+         11                *** unconnected ***
+         12                *** unconnected ***
+         13       GND
+         14       N$15
+         15       N$16
+         16       VCC
+         2        N$18
+         3        N$17
+         4        N$19
+         5        N$23
+         6        N$24
+         7        N$20
+         8        GND
+         9        N$16
+
+IC3      1        N$17
+         10                *** unconnected ***
+         11       N$14
+         12       N$63
+         13       N$64
+         14       N$66
+         15       N$28
+         16       N$27
+         17       N$26
+         18       N$25
+         2        N$18
+         3        N$19
+         4        N$20
+         5        N$21
+         6        N$22
+         7        N$23
+         8        N$24
+         9        GND
+
+IC4      1        N$65
+         2        VCC
+         3        GND
+
+J1       1        N$65
+         2                 *** unconnected ***
+         3        GND
+
+JP1      1        N$33
+         10       N$28
+         11       N$29
+         12       N$27
+         13       N$30
+         14       N$26
+         15       N$31
+         16       N$25
+         2        N$14
+         3        N$34
+         4        N$63
+         5        N$35
+         6        N$64
+         7        N$36
+         8        N$66
+         9        N$13
+
+JP2      1        N$57
+         2        N$58
+         3        GND
+
+JP3      1        N$57
+         2        N$58
+         3        GND
+
+JP4      1        GND
+         2        N$60
+         3        GND
+         4        N$61
+         5        GND
+         6        N$62
+
+Q2       B        N$37
+         C        N$56
+         E        VCC
+
+Q3       B        N$32
+         C        N$55
+         E        VCC
+
+Q4       B        N$38
+         C        N$54
+         E        VCC
+
+Q5       B        N$39
+         C        N$53
+         E        VCC
+
+Q6       B        N$42
+         C        N$52
+         E        VCC
+
+Q7       B        N$43
+         C        N$51
+         E        VCC
+
+Q8       B        N$40
+         C        N$50
+         E        VCC
+
+Q9       B        N$41
+         C        N$49
+         E        VCC
+
+Q10      1        N$12
+         2        N$11
+
+R17      1        N$10
+         2        GND
+
+TP2      TP       VCC
+
+TP3      TP       N$8
+
+TP4      TP       N$6
+
+TP5      TP       N$59
+
+TP6      TP       GND
+
+U$1      1        N$59
+         10       GND
+         11       N$62
+         12       N$1
+         13       N$2
+         14       N$3
+         15       N$4
+         16       N$5
+         17       N$6
+         18       N$7
+         19       N$8
+         2        N$10
+         20       VCC
+         3        N$9
+         4        N$11
+         5        N$12
+         6        N$60
+         7        N$16
+         8        N$15
+         9        N$61
+
