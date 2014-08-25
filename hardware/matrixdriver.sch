@@ -11441,99 +11441,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-jack">
-<description>&lt;b&gt;Jacks&lt;/b&gt;&lt;p&gt;
-Power Connectors&lt;br&gt;
-Phone Connectors&lt;br&gt;
-Cinch Connectors&lt;br&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DCJ0202">
-<description>&lt;b&gt;DC POWER JACK&lt;/b&gt;&lt;p&gt;
-Source: DCJ0202.pdf</description>
-<wire x1="1.65" y1="2.6" x2="-1.65" y2="2.6" width="0" layer="46"/>
-<wire x1="-1.65" y1="2.6" x2="-1.65" y2="3.6" width="0" layer="46"/>
-<wire x1="-1.65" y1="3.6" x2="1.65" y2="3.6" width="0" layer="46"/>
-<wire x1="1.65" y1="3.6" x2="1.65" y2="2.6" width="0" layer="46"/>
-<wire x1="5.3" y1="1.4" x2="4.3" y2="1.4" width="0" layer="46"/>
-<wire x1="4.3" y1="1.4" x2="4.3" y2="-1.4" width="0" layer="46"/>
-<wire x1="4.3" y1="-1.4" x2="5.3" y2="-1.4" width="0" layer="46"/>
-<wire x1="5.3" y1="-1.4" x2="5.3" y2="1.4" width="0" layer="46"/>
-<wire x1="1.4" y1="-3.5" x2="-1.4" y2="-3.5" width="0" layer="46"/>
-<wire x1="-1.4" y1="-3.5" x2="-1.4" y2="-2.5" width="0" layer="46"/>
-<wire x1="-1.4" y1="-2.5" x2="1.4" y2="-2.5" width="0" layer="46"/>
-<wire x1="1.4" y1="-2.5" x2="1.4" y2="-3.5" width="0" layer="46"/>
-<wire x1="-4.3" y1="-10.4" x2="4.3" y2="-10.4" width="0.2032" layer="21"/>
-<wire x1="4.3" y1="-10.4" x2="4.3" y2="3.9" width="0.2032" layer="51"/>
-<wire x1="4.3" y1="3.9" x2="-4.3" y2="3.9" width="0.2032" layer="51"/>
-<wire x1="-4.3" y1="3.9" x2="-4.3" y2="-10.4" width="0.2032" layer="21"/>
-<wire x1="-2.7" y1="3.9" x2="-4.3" y2="3.9" width="0.2032" layer="21"/>
-<wire x1="4.3" y1="3.9" x2="2.7" y2="3.9" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-10.275" x2="-3" y2="-3" width="0.2032" layer="51" style="shortdash"/>
-<wire x1="3" y1="-10.3" x2="3" y2="-3" width="0.2032" layer="51" style="shortdash"/>
-<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2032" layer="51" style="shortdash"/>
-<wire x1="-0.9" y1="-9" x2="-0.9" y2="-4.5" width="0.2032" layer="51" style="shortdash"/>
-<wire x1="0.9" y1="-9" x2="0.9" y2="-4.5" width="0.2032" layer="51" style="shortdash"/>
-<wire x1="-0.9" y1="-9" x2="0.9" y2="-9" width="0.2032" layer="51" curve="166.57811"/>
-<wire x1="4.3" y1="-10.4" x2="4.3" y2="-2.45" width="0.2032" layer="21"/>
-<wire x1="4.3" y1="2.3" x2="4.3" y2="3.9" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="3.1" drill="1" diameter="2" shape="long" rot="R180"/>
-<pad name="3" x="0" y="-3" drill="1" diameter="2" shape="long" rot="R180"/>
-<pad name="2" x="4.8" y="0" drill="1" diameter="2" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-10.16" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DC-JACK-SWITCH">
-<wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.016" x2="-0.762" y2="-2.54" width="0.1524" layer="94"/>
-<text x="-2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-3.302" y1="-2.54" x2="-1.778" y2="1.27" layer="94"/>
-<pin name="1" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="3" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<polygon width="0.1524" layer="94">
-<vertex x="2.54" y="-2.54"/>
-<vertex x="2.032" y="-1.27"/>
-<vertex x="3.048" y="-1.27"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DCJ0202" prefix="J">
-<description>&lt;b&gt;DC POWER JACK&lt;/b&gt;&lt;p&gt;
-Source: DCJ0202.pdf</description>
-<gates>
-<gate name="G$1" symbol="DC-JACK-SWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DCJ0202">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="resistor-net">
 <description>&lt;b&gt;Generic Resistor Networks&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -15111,6 +15018,63 @@ Source: 008-0260-0_E.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-dc-jack">
+<packages>
+<package name="CUI_DCJACK_PCB">
+<wire x1="-1.554" y1="4.7" x2="-3.2" y2="4.7" width="0.1524" layer="21"/>
+<wire x1="-3.2" y1="4.7" x2="-3.2" y2="1.654" width="0.1524" layer="21"/>
+<wire x1="-3.2" y1="-1.554" x2="-3.2" y2="-4.7" width="0.1524" layer="21"/>
+<wire x1="-3.2" y1="-4.7" x2="10.7" y2="-4.7" width="0.1524" layer="21"/>
+<wire x1="10.7" y1="-4.7" x2="10.7" y2="4.7" width="0.1524" layer="21"/>
+<wire x1="10.7" y1="4.7" x2="1.554" y2="4.7" width="0.1524" layer="21"/>
+<pad name="+" x="-3" y="0" drill="1.5"/>
+<pad name="-" x="3" y="0" drill="1.5"/>
+<pad name="CASE" x="0" y="4.7" drill="1.5"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DC_JACK">
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94" curve="233.130102"/>
+<wire x1="10.16" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="3.81" x2="15.24" y2="1.27" width="0.254" layer="94"/>
+<wire x1="13.97" y1="2.54" x2="16.51" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="8.89" x2="10.16" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="8.89" y1="5.588" x2="8.89" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-7.62" y="7.62" length="middle" direction="pwr"/>
+<pin name="VSS" x="-7.62" y="2.54" length="middle" direction="pwr"/>
+<pin name="@3" x="-7.62" y="-2.54" length="middle" direction="pwr"/>
+<polygon width="0.254" layer="94">
+<vertex x="8.89" y="3.81" curve="90"/>
+<vertex x="7.62" y="2.54" curve="90"/>
+<vertex x="8.89" y="1.27" curve="90"/>
+<vertex x="10.16" y="2.54" curve="90"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CUI_PJ-102A">
+<gates>
+<gate name="G$1" symbol="DC_JACK" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="CUI_DCJACK_PCB">
+<connects>
+<connect gate="G$1" pin="@3" pad="CASE"/>
+<connect gate="G$1" pin="VDD" pad="+"/>
+<connect gate="G$1" pin="VSS" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15155,7 +15119,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="JP4" library="pinhead" deviceset="PINHD-2X3" device="" value="P.SELECT"/>
 <part name="IC4" library="linear" deviceset="78*" device="DT" technology="05" value="7805DT"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="10µ"/>
-<part name="J1" library="con-jack" deviceset="DCJ0202" device=""/>
 <part name="TP2" library="testpad" deviceset="TPSQ" device="TP19SQ" value="TPSQTP19SQ"/>
 <part name="CTS742C083_3" library="resistor-net" deviceset="CTS742C083" device="" value="10"/>
 <part name="CTS742C083_4" library="resistor-net" deviceset="CTS742C083" device="" value="10"/>
@@ -15164,6 +15127,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="C5" library="resistor" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="C6" library="Panasonic-EEEFT_EEEH" deviceset="EEE-" device="-CASE-D8" technology="HC1C101XP" value="100UF"/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP" value="20MHZ"/>
+<part name="U$2" library="con-dc-jack" deviceset="CUI_PJ-102A" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15196,7 +15160,6 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="JP4" gate="A" x="48.26" y="15.24"/>
 <instance part="IC4" gate="A1" x="5.08" y="152.4" rot="R90"/>
 <instance part="C4" gate="G$1" x="7.62" y="170.18" rot="R90"/>
-<instance part="J1" gate="G$1" x="7.62" y="104.14" rot="R90"/>
 <instance part="IC2" gate="P" x="109.22" y="73.66" rot="R90"/>
 <instance part="TP2" gate="G$1" x="60.96" y="121.92" rot="R270"/>
 <instance part="CTS742C083_3" gate="G$1" x="152.4" y="170.18"/>
@@ -15206,6 +15169,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="C5" gate="G$1" x="35.56" y="50.8" rot="R180"/>
 <instance part="C6" gate="A" x="5.08" y="134.62"/>
 <instance part="Q1" gate="G$1" x="30.48" y="68.58" rot="R90"/>
+<instance part="U$2" gate="G$1" x="12.7" y="101.6" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -15474,19 +15438,17 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="IC4" gate="A1" pin="GND"/>
 <wire x1="12.7" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
 <label x="20.32" y="152.4" size="1.778" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="15.24" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="111.76" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="119.38" x2="15.24" y2="119.38" width="0.1524" layer="91"/>
 <junction x="15.24" y="152.4"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="119.38" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="109.22" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="134.62" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="170.18" x2="15.24" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="170.18" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C6" gate="A" pin="2"/>
 <wire x1="12.7" y1="134.62" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
 <junction x="15.24" y="134.62"/>
+<pinref part="U$2" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="VSS"/>
@@ -15782,10 +15744,12 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <pinref part="IC4" gate="A1" pin="VI"/>
 <wire x1="5.08" y1="142.24" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="134.62" x2="5.08" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="134.62" x2="5.08" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C6" gate="A" pin="1"/>
 <junction x="5.08" y="134.62"/>
+<pinref part="U$2" gate="G$1" pin="VDD"/>
+<wire x1="5.08" y1="119.38" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="119.38" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
