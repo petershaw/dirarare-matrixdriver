@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="25" display="no" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="12.5" unitdist="mil" unit="mm" style="lines" multiple="25" display="no" altdistance="25" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -124,10 +124,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="-0.16" x2="52.03" y2="-0.16" width="0" layer="20"/>
-<wire x1="52.03" y1="-0.16" x2="52.03" y2="51.5825" width="0" layer="20"/>
-<wire x1="52.03" y1="51.5825" x2="0" y2="51.5825" width="0" layer="20"/>
-<wire x1="0" y1="51.5825" x2="0" y2="-0.16" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="50" y2="0" width="0" layer="20"/>
+<wire x1="50" y1="0" x2="50" y2="50" width="0" layer="20"/>
+<wire x1="50" y1="50" x2="0" y2="50" width="0" layer="20"/>
+<wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
 <text x="51.1175" y="48.26" size="1.016" layer="1" font="vector" rot="R180">dirarare
 Matrixdriver</text>
 <text x="49.53" y="9.525" size="1.016" layer="1" font="vector" rot="R270">REV 1</text>
