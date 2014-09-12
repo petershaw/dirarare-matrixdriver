@@ -1,6 +1,6 @@
 Netlist
 
-Exported from matrixdriver.brd at 21/08/14 21:55
+Exported from matrixdriver.brd at 12/09/14 09:51
 
 EAGLE Version 7.0.0 Copyright (c) 1988-2014 CadSoft
 
@@ -16,7 +16,6 @@ GND      C1           1
          IC2          8
          IC3          9
          IC4          3
-         J1           3
          JP2          3
          JP3          3
          JP4          1
@@ -25,6 +24,8 @@ GND      C1           1
          R17          2
          TP6          TP
          U$1          10
+         U$2          -
+         U$2          CASE
 
 N$1      CTS742C083_2 4
          U$1          12
@@ -62,11 +63,11 @@ N$10     IC1          2
          U$1          2
 
 N$11     C1           2
-         Q10          2
+         Q1           2
          U$1          4
 
 N$12     C2           2
-         Q10          1
+         Q1           1
          U$1          5
 
 N$13     CTS742C083_4 8
@@ -215,7 +216,7 @@ N$64     IC3          13
 
 N$65     C6           1
          IC4          1
-         J1           1
+         U$2          +
 
 N$66     IC3          14
          JP1          8

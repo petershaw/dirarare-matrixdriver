@@ -8,19 +8,19 @@
 </settings>
 <grid distance="12.5" unitdist="mil" unit="mm" style="lines" multiple="25" display="no" altdistance="25" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
@@ -28,8 +28,8 @@
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
@@ -60,19 +60,19 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="Beschreib" color="9" fill="1" visible="no" active="yes"/>
-<layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="BD-Top" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="yes"/>
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -128,12 +128,12 @@
 <wire x1="50" y1="0" x2="50" y2="50" width="0" layer="20"/>
 <wire x1="50" y1="50" x2="0" y2="50" width="0" layer="20"/>
 <wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
-<text x="2.2225" y="48.26" size="1.016" layer="1" font="vector" rot="R270">dirarare
+<text x="2.8575" y="46.355" size="1.016" layer="1" font="vector" rot="R270">dirarare
 Matrixdriver</text>
-<text x="46.6725" y="7.9375" size="1.016" layer="1" font="vector" rot="R270">REV 1</text>
-<hole x="2.5" y="48" drill="1.1"/>
-<hole x="48" y="2.5" drill="1.1"/>
-<hole x="48" y="48" drill="1.1"/>
+<text x="48.26" y="9.525" size="1.016" layer="1" font="vector" rot="R270">REV 1</text>
+<hole x="2.5" y="47.5" drill="1.1"/>
+<hole x="47.5" y="2.5" drill="1.1"/>
+<hole x="47.5" y="47.5" drill="1.1"/>
 <hole x="2.5" y="2.5" drill="1.1"/>
 </plain>
 <libraries>
@@ -3597,7 +3597,7 @@ Covered vias can be set in Masks (Limit).
 <contactref element="IC4" pad="3"/>
 <contactref element="C4" pad="2"/>
 <contactref element="IC2" pad="8"/>
-<via x="5.715" y="39.37" extent="1-16" drill="0.6"/>
+<via x="6.6675" y="39.37" extent="1-16" drill="0.6"/>
 <via x="21.59" y="27.305" extent="1-16" drill="0.6"/>
 <via x="19.685" y="10.4775" extent="1-16" drill="0.6"/>
 <via x="45.085" y="5.08" extent="1-16" drill="0.6"/>
@@ -3643,8 +3643,7 @@ Covered vias can be set in Masks (Limit).
 <vertex x="0.3175" y="49.8475"/>
 <vertex x="0.3175" y="0.9525"/>
 <vertex x="0.9525" y="0.3175"/>
-<vertex x="49.53" y="0.3175"/>
-<vertex x="49.2125" y="0.9525"/>
+<vertex x="49.8475" y="0.3175"/>
 <vertex x="49.8475" y="49.8475"/>
 </polygon>
 <contactref element="U$2" pad="CASE"/>
@@ -3671,9 +3670,10 @@ Covered vias can be set in Masks (Limit).
 <wire x1="29.845" y1="20.32" x2="33.02" y2="20.32" width="0.4064" layer="1"/>
 <wire x1="33.02" y1="20.32" x2="33.655" y2="19.685" width="0.4064" layer="1"/>
 <via x="33.655" y="19.685" extent="1-16" drill="0.6"/>
-<wire x1="33.655" y1="19.685" x2="33.02" y2="20.32" width="0.4064" layer="16"/>
-<wire x1="33.02" y1="20.32" x2="22.225" y2="20.32" width="0.4064" layer="16"/>
-<wire x1="22.225" y1="20.32" x2="21.59" y2="20.955" width="0.4064" layer="16"/>
+<wire x1="33.655" y1="19.685" x2="33.02" y2="19.05" width="0.4064" layer="16"/>
+<wire x1="33.02" y1="19.05" x2="21.9075" y2="19.05" width="0.4064" layer="16"/>
+<wire x1="21.9075" y1="19.05" x2="21.59" y2="19.3675" width="0.4064" layer="16"/>
+<wire x1="21.59" y1="19.3675" x2="21.59" y2="20.955" width="0.4064" layer="16"/>
 <via x="21.59" y="20.955" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="21.59" y1="20.955" x2="21.59" y2="19.05" width="0.4064" layer="1"/>
 <wire x1="21.59" y1="19.05" x2="21.59" y2="18.5166" width="0.4064" layer="1"/>

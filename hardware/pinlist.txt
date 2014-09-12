@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from matrixdriver.brd at 21/08/14 21:55
+Exported from matrixdriver.brd at 12/09/14 09:51
 
 EAGLE Version 7.0.0 Copyright (c) 1988-2014 CadSoft
 
@@ -108,10 +108,6 @@ IC4      1        N$65
          2        VCC
          3        GND
 
-J1       1        N$65
-         2                 *** unconnected ***
-         3        GND
-
 JP1      1        N$33
          10       N$28
          11       N$29
@@ -144,6 +140,9 @@ JP4      1        GND
          5        GND
          6        N$62
 
+Q1       1        N$12
+         2        N$11
+
 Q2       B        N$37
          C        N$56
          E        VCC
@@ -175,9 +174,6 @@ Q8       B        N$40
 Q9       B        N$41
          C        N$49
          E        VCC
-
-Q10      1        N$12
-         2        N$11
 
 R17      1        N$10
          2        GND
@@ -212,4 +208,8 @@ U$1      1        N$59
          7        N$16
          8        N$15
          9        N$61
+
+U$2      +        N$65
+         -        GND
+         CASE     GND
 
