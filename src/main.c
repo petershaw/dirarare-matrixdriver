@@ -49,7 +49,7 @@ ISR (TIMER0_OVF_vect){
 			;
 	}
 
-	MATRIX_PORT = value;
+	MATRIX_PORT = ~(value);
 	CLOCK_PORT &= ~_BV(CLOCK_NEXT_PIN);
 	CLOCK_PORT |= _BV(CLOCK_NEXT_PIN);
 	
@@ -66,7 +66,7 @@ ISR (TIMER0_OVF_vect){
 int main(void) {
 	// SET ALL LIGHTS OFF
 	DDRB |= 0b11111111;
-	MATRIX_PORT = 0b00000000;
+	MATRIX_PORT = 0b11111111;
 
 	init_status_indicator();
 	mark_as_error();
@@ -93,7 +93,7 @@ int main(void) {
     	
    	release_error();		
 	
- 	
+ 
     dmxreciver_init();
 	sei();
 

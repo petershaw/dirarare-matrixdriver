@@ -6,7 +6,8 @@
 ###### Date: Jan/2014
 ###### URL: 
 #######################################################################
-
+# Fuses: 0xff 0xdf 0xff
+#
 PROJECTNAME = dirarare-matrixdriver
 
 include environment/build.mk
