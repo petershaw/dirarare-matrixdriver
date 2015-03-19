@@ -36,20 +36,18 @@ ISR (TIMER0_OVF_vect){
  	// set value and move to next row
 
 	// Calculate next row
-	//uint8_t value = 0x00;
-	static uint8_t value = 0x00;
+	uint8_t value = 0x00;
 	/**
 	 * Get dimming of light by ((a >> 3) & 0x01)
 	 * and write to value position of row position
 	 */ 	
-// 	for(int curLight = 0; curLight < 8; ++curLight){
-// 		uint8_t lightdimvalue = LIGHT[(rowCounter *8) +curLight];
-// 		value |= 
-// 			((DIM[lightdimvalue] >> dimCounter) & 0x01)
-// 			<< curLight
-// 			;
-// 	}
-	
+	for(int curLight = 0; curLight < 8; ++curLight){
+		uint8_t lightdimvalue = LIGHT[(rowCounter *8) +curLight];
+		value |= 
+			((DIM[lightdimvalue] >> dimCounter) & 0x01)
+			<< curLight
+			;
+	}
 
 	MATRIX_PORT = ~(value);
 	CLOCK_PORT &= ~_BV(CLOCK_NEXT_PIN);
@@ -61,9 +59,6 @@ ISR (TIMER0_OVF_vect){
  		++dimCounter;
 		if(dimCounter == 8){
 			dimCounter = 0;
-			
-			if(value == 0){ value = 255; mark_as_error(); } else { value = 0; release_error(); }
-			
 		}
      }
 }
