@@ -14,6 +14,7 @@ include environment/build.mk
 include environment/applications.mk
 include environment/board.mk
 include environment/programmer.mk
+include environment/fuse.mk
 
 include options.mk
 
@@ -124,7 +125,7 @@ info:
 
 #### Upload ####
 upload:
-	$(AVRDUDE) -c $(PROGRAMMER) -B$(BOOTLOADER_BAUD) -Uflash:w:$(HEXROMTRG) -p $(PROGRAMMER_MCU)
+	$(AVRDUDE) -c $(PROGRAMMER) -P usb -Uflash:w:$(HEXROMTRG) -p $(PROGRAMMER_MCU)
 
 #### Cleanup ####
 clean:
@@ -136,3 +137,6 @@ clean:
 	$(REMOVE) -r $(OBJECTDIR)
 	$(MAKE) -C tests clean
 
+#### Set Fusebits ####
+fuse:
+	$(AVRDUDE) -c $(PROGRAMMER) -P usb -U lfuse:w:$(LFUSE):m -U hfuse:w:$(HFUSE):m -U efuse:w:$(EFUSE):m -p $(PROGRAMMER_MCU)
