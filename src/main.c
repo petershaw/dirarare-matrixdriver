@@ -59,6 +59,7 @@ ISR (TIMER0_OVF_vect){
  		++dimCounter;
 		if(dimCounter == 8){
 			dimCounter = 0;
+            STATUSLED_PORT ^= _BV(STATUSLED_PIN);
 		}
      }
 }
