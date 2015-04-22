@@ -4,3 +4,4 @@
 hardware/*.b#*
 hardware/*.s#*
 local
+.DS_Store

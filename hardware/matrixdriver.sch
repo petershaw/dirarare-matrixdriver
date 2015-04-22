@@ -14896,13 +14896,13 @@ Source: 008-0260-0_E.pdf</description>
 <part name="IC3" library="uln-udn" deviceset="ULN2803A" device="SMD" value="ULN2803"/>
 <part name="JP1" library="pinhead-fixdrills" deviceset="PINHD-2X8" device="_2.54" value="LIGHTS"/>
 <part name="Q2" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="Q3" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="Q4" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="Q5" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="Q6" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="Q7" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="Q8" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
-<part name="Q9" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1"/>
+<part name="Q3" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1" value="BC856"/>
+<part name="Q4" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1" value="BC856"/>
+<part name="Q5" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1" value="BC856"/>
+<part name="Q6" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1" value="BC856"/>
+<part name="Q7" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1" value="BC856"/>
+<part name="Q8" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1" value="BC856"/>
+<part name="Q9" library="transistor-pnp" deviceset="MMBT4403*" device="SMD" technology="LT1" value="BC856"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X3" device="" value="IN"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X3" device="" value="OUT"/>
 <part name="+" library="testpad" deviceset="TPSQ" device="TP20R" value="TPSQTP20R"/>
@@ -15716,8 +15716,8 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="VDD" class="0">
 <segment>
-<wire x1="2.54" y1="198.12" x2="20.32" y2="198.12" width="0.1524" layer="91"/>
-<label x="2.54" y="200.66" size="1.778" layer="95" xref="yes"/>
+<wire x1="5.08" y1="198.12" x2="20.32" y2="198.12" width="0.1524" layer="91"/>
+<label x="5.08" y="197.358" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <wire x1="144.78" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
