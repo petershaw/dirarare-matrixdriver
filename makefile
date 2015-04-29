@@ -140,3 +140,7 @@ clean:
 #### Set Fusebits ####
 fuse:
 	$(AVRDUDE) -c $(PROGRAMMER) -P usb -U lfuse:w:$(LFUSE):m -U hfuse:w:$(HFUSE):m -U efuse:w:$(EFUSE):m -p $(PROGRAMMER_MCU)
+
+### Read Fusebits ###
+readfuse:
+	$(AVRDUDE) -c $(PROGRAMMER) -P usb -U lfuse:r:/tmp/LOW.tmp:h -U hfuse:r:/tmp/HIGH.tmp:h -U efuse:r:/tmp/EXTENDED.tmp:h -qq -p $(PROGRAMMER_MCU)
